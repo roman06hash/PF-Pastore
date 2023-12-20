@@ -11,71 +11,84 @@
 <body>
         <!-- Copiar mismo header que el del index.html -->
         <header>
-            <!--Pasar footer y header, y demas secciones a las pages para lograr los mismos footers y headers en las 5 pages-->
+            <!--Pasar footer y header, y demas secciones a las pages para lograr los mismos footers y headers en las pages-->
             <nav class="nav">
-                <div>
-                    <img src="../images/logo (1).webp" alt="logo-lamborghini" class="logo1">
-                <img src="../images/Lamborghini_logo_2.png" alt="logo-text-lamborghini2" class="logo2">
-                </div>
+                <div>       <img src="../images/logo (1).webp" alt="logo-lamborghini" class="logo1"> </div>
                 
-                <div class="encabezado">
-                    <ul>
-                        <li> <a href="../index.html">Home</a></li>
-                                <li><a href="../pages/lamborghini-huracan.html">Huracan</a></li>
-                                <li><a href="../pages/lamborghini-urus.html">Urus</a></li>
-                        <li><a href="#footer3">Contacto y redes</a></li>
+                <img src="../images/Lamborghini_logo_2.png" alt="logo-text-lamborghini2" class="logo2">
+                    <ul>  
+                        <li class="li2"><a href="../index.html">Home</a></li>
+                        <li class="menu-lista"><a href="#modelos">Todos los modelos <i class="bi-chevron-down"></i> <i class="bi-chevron-double-down"></i> </a>     
+                            <ul class="lista-desplegable">
+                                <li class="li2"><a href="../pages/lamborghini-huracan.html">Huracan</a></li>
+                                <li class="li3"><a href="../pages/lamborghini-urus.html">Urus</a></li>
+                            </ul>
+                        </li>
+                        <li class="li4"><a href="../pages/contacto.html">Contacto</a></li>
                     </ul>
-                </div>
+              
             
             </nav>
-            <hr>
+            
         </header>
 
-         <hr>
         <main>
             <section>
                 <div>
 
                     <video class="video-revuelto" src="/videos/SnapInsta.io-Lamborghini Revuelto in [4K]-(1080p) - Trim.mp4" autoplay ; muted ; loop></video>
-  
+  <h1 class="huracan">LAMBORGHINI<br><span>REVUELTO</span></h1>
                 </div>
             </section>
-<hr>
+
+
+            <section class="info-pages">
+                <article class="grids">
+                    <div>
+                        <img src="../images/galeria-de-fotos/lamborghini-revuelto/vlcsnap-2023-03-17-16h18m30s840.jpg" alt="lamborghinihuracan-auto">
+                    </div>
+                    <div class="texto">
+                        <p>El Lamborghini Revuelto es un automóvil superdeportivo con motor central-trasero montado longitudinalmente y de tracción en las cuatro ruedas, producido por el fabricante italiano Lamborghini desde la primavera de 2023. Este es el sucesor del Aventador, que ha sido el último fabricado por la firma con motor atmosférico puramente de gasolina.</p>
+                    </div>
+                </article>
+    
+                <article class="grids">
+                    <div class="texto">
+                        <p>Este nuevo super deportivo cuenta con un motor V12 de 6.5 litros y un alternativo motor electrico. El V12 tiene 825 CV y se combina con motores eléctricos en el eje delantero y una caja de cambios de ocho velocidades. La potencia total es de 1015 CV, logrando acelerar de 0 a 100 km/h en 2.5 segundos. La autonomía eléctrica es limitada a 10 km. La potencia varía según el modo de conducción, alcanzando su máximo en el modo Sport plus</p>
+                    </div>
+                    <div>
+                        <img src="../images/galeria-de-fotos/lamborghini-revuelto/og.jpg" alt="lamborghinihuracan-auto">
+                    </div>
+                </article>
+        </section>
+
             <section class="imagenes-revuelto">
                 <h2>Galeria de fotos de Lamborghini</h2>
-                <article>
-                    <div><img src="/images/galeria-de-fotos/lamborghini-revuelto/16992623939882.jpg" alt="lamborghini-revuelto"></div>
-                    <div><img src="/images/galeria-de-fotos/lamborghini-revuelto/16992624568609.jpg" alt="lamborghini-revuelto"></div>
-                    <div><img src="/images/galeria-de-fotos/lamborghini-revuelto/lamborghini-revuelto-2023-10-primo-contatto_09.jpg" alt="lamborghini-revuelto"></div>
-                    <div><img src="/images/galeria-de-fotos/lamborghini-revuelto/IMG_2152-scaled.jpg" alt="lamborghini-revuelto-interior"></div>
-                    <div><img src="/images/galeria-de-fotos/lamborghini-revuelto/104.webp" alt="lamborghini-revuelto"></div>
-                    <div><img src="/images/galeria-de-fotos/lamborghini-revuelto/16800984791600.jpg" alt="lamborghini-revuelto"></div>
-                    <div><img src="/images/galeria-de-fotos/lamborghini-revuelto/T3PZMZTEVJA2BOIDOWDCMK2CMU.jpg" alt="lamborghini-revuelto"></div>
-                    <div><img src="/images/galeria-de-fotos/lamborghini-revuelto/a912f651-32df-4799-b68e-c5d9579a1ad8.jpg" alt="lamborghini-revuelto"></div>
-                    <div><img src="/images/galeria-de-fotos/lamborghini-revuelto/16992630595871.jpg" alt="lamborghini-revuelto"></div>
-                </article>
-                
             </section>
         </main>
 
         <hr>
             
-        <footer id="footer3" class="footer">
-            <div>
-                <h1>Lamborghini</h1>
-                 
+        <footer id="footer" class="footer">
+            <div >
+                <h6>Lamborghini</h6>
+                 <hr>
                 <ul>
-                    <li> <a href="#prueba-de-manejo">Solicite su prueba de manejo</a></li>
-                    <li> <a href="#modelos">Todos los vehiculos</a></li>
-                    <li><a href="#concesionarios">Concecionarios Lamborghini</a></li>
-                    <li><a href="index.html">Volver hacia arriba</a></li>
+                    <li> <a href="../#modelos">Todos los vehiculos</a></li>
+                    <li> <a href="./pages/lamborghini-huracan.html">Huracan</a></li>
+                    <li> <a href="./pages/lamborghini-revuelto.html">Revuelto</a></li>
+                    <li> <a href="./pages/lamborghini-urus.html">Urus</a></li>
+                    <li> <a href="../#prueba-de-manejo">Solicite su prueba de manejo</a></li>
+                    <li> <a href="./pages/contacto.html">Contacto</a></li>
+                    <li><a href="index.html">Volver hacia arriba</a></li> 
                 </ul>
             </div>
-    
-    
+        
+        
             <div id="contacto">
                 
-                <h2>Contactanos y seguinos en</h2>
+                <h6>Contactanos y seguinos</h6>
+               <hr>
                 <ul>
                     <li>
                         <i class="bi bi-instagram"></i>
@@ -94,41 +107,41 @@
                         <a href="https://www.youtube.com/channel/UC9DXZC8BCDOW6pYAQKgozqw" target="blank">Youtube</a>
                     </li>
                 </ul>
-                <p>Para enterarte de lo ultimo y estar en contacto con Lamborghini.</p>
+                
+                <p>Para enterarte de las ultimas noticias y novedades.</p>
                 
                 
             </div> 
-    
-    
-    <div>
+        
+        
         <div>
-            <h1>Suscribite y unite a la familia Lamborghini!</h1>
+        <div>
+            <h6>Suscribite y unite a la familia Lamborghini!</h6>
+            <hr>
             <form action=""></form>
-    
+        
             <div>
                 <label for="Nombre-usuario">Ingrese su Nombre y apellido</label>
              <input type="text" id="Nombre-usuario" placeholder="Ej: Ferruccio Lamborghini">
             </div>
-    
+        
              
-    <div>
+        <div>
         <label for="email-cliente">Ingrese su email:</label>
             <input type="email" id="email-cliente" placeholder="Ej: lamborghini@gmail.com">
-    </div>
+        </div>
             
             
-    <div>
+        <div>
         <input type="submit" value="Suscribirse">
-    </div>
-    
+        </div>
+        
             <p>Suscrbiendosé, nos contáctaremos en la brevedad <br> y ustéd recibirá novedades y ofertas exclusivas en su correo. </p>
             
-    
-        </div>
-    </div>
         
-            
-    
+        </div>
+        </div>
+        
         </footer>
         
 </body>

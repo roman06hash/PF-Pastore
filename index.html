@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lamborghini - Sitio Web</title>
     <link rel="icon" href="./images/logo (1).webp" type="image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lobster&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
@@ -13,40 +16,31 @@
     <header>
         <!--Pasar footer y header, y demas secciones a las pages para lograr los mismos footers y headers en las pages-->
         <nav class="nav">
-            <div>
-                <img src="images/logo (1).webp" alt="logo-lamborghini" class="logo1">
-           
-                
-            <img src="images/Lamborghini_logo_2.png" alt="logo-text-lamborghini2" class="logo2">
-            </div>
+            <div>       <img src="images/logo (1).webp" alt="logo-lamborghini" class="logo1"> </div>
             
-            <div>
+            <img src="images/Lamborghini_logo_2.png" alt="logo-text-lamborghini2" class="logo2">
                 <ul>  
-                    <li class="menu-lista"><a href="#modelos">Todos los modelos</a>     
+                    <li class="menu-lista"><a href="#modelos">Todos los modelos <i class="bi-chevron-down"></i> <i class="bi-chevron-double-down"></i> </a>     
                         <ul class="lista-desplegable">
                             <li class="li1"><a href="./pages/lamborghini-huracan.html">Huracan</a></li>
                             <li class="li2"><a href="./pages/lamborghini-revuelto.html">Revuelto</a></li>
                             <li class="li3"><a href="./pages/lamborghini-urus.html">Urus</a></li>
                         </ul>
                     </li>
-                    <li class="li4"><a href="./pages/contacto.html">Contacto y redes</a></li>
+                    <li class="li4"><a href="./pages/contacto.html">Contacto</a></li>
                 </ul>
-            </div>
+          
         
         </nav>
-    
+        
     </header>
 
 
 
 
     <main>
-<section>
-    <div class="portada">
+<section class="portada">
         <h1 class="titulo">"DESCUBRE EL LUJO <br> Y LA VELOCIDAD CON <span>Lamborghini"</span></h1>
-    
-    </div>
-    
 </section>
  
 
@@ -55,7 +49,7 @@
     <h2 class="titulo1">MODELOS</h2>
 
 <article class="lamborghini-huracan">
-    <h2 class="h1">Lamborghini HURACAN</h2>
+    <h3 class="h1">Lamborghini <span>Huracán</span></h3>
     
         <img src="images/lamborghini-huracan.png" alt="auto-lamborghini-huracan" class="lamborghinihuracan">
         <div class="cuerpo-tarjeta">
@@ -77,7 +71,7 @@
 
 
 <article class="lamborghini-revuelto" >
-    <h3>Lamborghini REVUELTO</h3>
+    <h3>Lamborghini <span>Revuelto</span></h3>
     
         <img src="images/lamborghini-revuelto.png" alt="auto-lamborghini-revuelto" class="lamborghinirevuelto">
         <div class="cuerpo-tarjeta">
@@ -98,7 +92,7 @@
 </article>
 
 <article class="lamborghini-urus">
-    <h4>Lamborghini URUS</h4>
+    <h4>Lamborghini <span>Urus</span></h4>
  
         <img src="images/Lamborghini-Urus.png" alt="auto-lamborghini-urus" class="lamborghiniurus">
         <div class="cuerpo-tarjeta">
@@ -123,7 +117,7 @@
 <section id="prueba-de-manejo" class="pruebademanejo">
         <h5 class="titulo-pruebademanejo">SOLICITE SU PRUEBA DE MANEJO <br> Y DISFRUTE DE LA EXPERIENCIA</h5>
         <p class="texto-pruebademanejo">Pide tu oportunidad de conducir <br> y vive la experiencia incomparable  de Lamborghini.</p>
-        <p><a href="./pages/contacto.html" class="contacto-pruebademanejo">Contáctanos</a></p>
+        <a href="./pages/contacto.html" class="contacto-pruebademanejo">Contactanos</a>
        
     
         
@@ -146,20 +140,24 @@
 
     <footer id="footer" class="footer">
         <div >
-            <h1>Lamborghini</h1>
-             
+            <h6>Lamborghini</h6>
+             <hr>
             <ul>
-                <li> <a href="../#prueba-de-manejo">Solicite su prueba de manejo</a></li>
                 <li> <a href="../#modelos">Todos los vehiculos</a></li>
-                <li><a href="../#concesionarios">Concecionarios Lamborghini</a></li>
-                <li><a href="lamborghini-huracan.html">Volver hacia arriba</a></li>
+                <li> <a href="./pages/lamborghini-huracan.html">Huracan</a></li>
+                <li> <a href="./pages/lamborghini-revuelto.html">Revuelto</a></li>
+                <li> <a href="./pages/lamborghini-urus.html">Urus</a></li>
+                <li> <a href="../#prueba-de-manejo">Solicite su prueba de manejo</a></li>
+                <li> <a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="index.html">Volver hacia arriba</a></li> 
             </ul>
         </div>
     
     
         <div id="contacto">
             
-            <h2>Contactanos y seguinos en</h2>
+            <h6>Contactanos y seguinos</h6>
+            <hr>
             <ul>
                 <li>
                     <i class="bi bi-instagram"></i>
@@ -178,7 +176,8 @@
                     <a href="https://www.youtube.com/channel/UC9DXZC8BCDOW6pYAQKgozqw" target="blank">Youtube</a>
                 </li>
             </ul>
-            <p>Para enterarte de lo ultimo y estar en contacto con Lamborghini.</p>
+            
+            <p>Para enterarte de las ultimas noticias y novedades.</p>
             
             
         </div> 
@@ -186,7 +185,8 @@
     
     <div>
     <div>
-        <h1>Suscribite y unite a la familia Lamborghini!</h1>
+        <h6>Suscribite y unite a la familia Lamborghini!</h6>
+        <hr>
         <form action=""></form>
     
         <div>

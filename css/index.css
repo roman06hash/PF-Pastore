@@ -15,14 +15,12 @@ img{
     max-height: 100%;
 }
 
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-}
 /* Encabezado */
 
 .nav a{
         text-decoration: none;
         color: orange;
+        font-family: 'Roboto', sans-serif;
 }
 
 .li1:hover a{
@@ -105,6 +103,17 @@ nav li{
     padding: 20px;
 }
 
+.bi-chevron-double-down{
+    display: none;
+}
+
+.menu-lista:hover .bi-chevron-down {
+    display: none;
+}
+
+.menu-lista:hover .bi-chevron-double-down {
+    display: inline;
+}
 
 /* Section 1 */
 
@@ -121,10 +130,11 @@ nav li{
 }
 
 .portada span{
-    font-style: italic;
+font-style: italic;
 }
 
 .titulo{
+    font-family: 'Roboto', sans-serif;
     color: black;
     font-size: 50px;
 margin-left: 130px;
@@ -134,8 +144,13 @@ margin-top: 145px;
 
 /* Section 2 */
 
+.modelos span{
+    font-style: italic;
+}
+
 .modelos h2,h3,h4{
     font-size: 22px;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -153,7 +168,7 @@ background-color: #181818;
     margin-bottom: 50px;
     width: 100%;
     color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .modelos article{
@@ -161,7 +176,7 @@ background-color: #181818;
     width: 50vh;
     height: 60vh;
     margin: 40px;
-    border: 5px solid rgb(177, 176, 176);
+    border: 2px solid orange;
     width: 450px;
     border-radius: 10px;
     display: inline-block;
@@ -169,7 +184,7 @@ background-color: #181818;
     padding-top: 30px;
 }
 
-  .modelos article ul {
+.modelos article ul {
     list-style: none;
     padding: 0;
 }
@@ -180,23 +195,21 @@ background-color: #181818;
     }    
 
 .lamborghinihuracan{
-    height: 20vh;
-    width: 45vh;
+    height: 19vh;
+    width: 42vh;
     position: scroll;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top:50px;
+    margin-top:66px;
 }
 
-
 .lamborghinirevuelto{
-    height: 25vh;
+    height: 26vh;
     width: 53vh;
     position: scroll;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .lamborghiniurus{
-    height: 25vh;
+    height: 27vh;
     width: 40vh;
     position: scroll;
     font-family: Arial, Helvetica, sans-serif;
@@ -204,8 +217,7 @@ background-color: #181818;
 
 .lamborghini-urus,.lamborghini-revuelto,.lamborghini-huracan,.lamborghinihuracan p{
 
-        font-family: Arial, Helvetica, sans-serif;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 /* utilizo div para poder separar y poder trabajar en los cuerpos de las trajetas separandolos de la img en si */
@@ -228,6 +240,11 @@ background-color: #181818;
         background-color: black;
         margin-top: 20px;
         border: 2px white solid;
+    }
+
+    .boton{
+        font-family: 'Roboto', sans-serif;
+border-radius: 200px;
     }
 
 .boton:hover{
@@ -255,18 +272,18 @@ border: 2px orange solid;
 }
 
 .titulo-pruebademanejo{
-    color:rgb(0, 0, 0);
+    color: black;
     font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 margin-left: 90px;
 margin-top: 130px;
 }
 
 .texto-pruebademanejo{
-    color:rgb(0, 0, 0);
+    color: black;
     margin-left: 90px;
     font-size: 3vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .contacto-pruebademanejo{
@@ -274,9 +291,10 @@ margin-top: 130px;
     margin-left: 300px;
     margin-top: 14px;
     display: flex;
-    color: #181818;
+    color: black;
     text-decoration: none;
     font-size: 25px;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -297,6 +315,8 @@ text-decoration: underline;
     display: flex;
 justify-content: center;
 padding:20px;
+font-family: 'Roboto', sans-serif;
+
 }
 
 .conc1{
@@ -305,17 +325,17 @@ padding:20px;
 justify-content: center;
 padding:20px;
 font-size: 2vh;
+font-family: 'Roboto', sans-serif;
 }
 
 
 /* page1 */
 
 .video-huracan{
-    opacity: 0.9;
-    height: 100%;
+    opacity: 0.7;
     width: 100%;
-overflow: fill;
-resize: fill;
+    overflow:fill;
+    resize: fill;
 z-index: 1;
 }
 
@@ -326,6 +346,16 @@ z-index: 1;
     left: 160px;
     font-size: 10vh;
     color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.huracan span{
+    font-style: italic;
+}
+
+.imagenes-huracan{
+    background-color: black;
+    padding-bottom: 100px;
 }
 
 .imagenes-huracan article{
@@ -337,7 +367,8 @@ z-index: 1;
 }
 
 .imagenes-huracan article div {
-    margin: 5px;
+    margin: 15px;
+    border: solid 2px orange;
 }
 
 .imagenes-huracan img {
@@ -345,6 +376,43 @@ z-index: 1;
     height: 100%;
 }
 
+.imagenes-huracan h3{
+    color: orange;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto',sans-serif;
+    padding: 90px 0px 50px 0px;
+}
+
+.info-pages{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 150px;
+    padding: 180px 200px 100px 200px;
+    background-color: black;
+}
+
+.texto{
+    font-family: 'Roboto',sans-serif;
+    font-size: 2.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.info-pages .grids img{
+border: solid 2px orange;
+border-radius: 20px;
+width: 700px;
+height: 400px;
+}
+
+.grids{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
 
 /* RESPONSIVE siempre ultimo por cascada */
 @media(max-width: 576px) {
@@ -358,6 +426,7 @@ z-index: 1;
 /* page2 */
 
 .video-urus{
+    opacity: 0.8;
     height: 100%;
     width: 100%;
     resize: auto;
@@ -380,47 +449,98 @@ z-index: 1;
 }
 
 
+.imagenes-urus{
+    background-color: black;
+    padding-bottom: 100px;
+}
+
+.imagenes-urus article{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    /* justify-content: ; HORIZONTAL*/
+    /* align-content: ; VERTICAL */
+}
+
+.imagenes-urus article div {
+    margin: 15px;
+    border: solid 2px orange;
+}
+
+.imagenes-urus img {
+    width: 100%;
+    height: 100%;
+}
+
+.imagenes-urus h2{
+    color: orange;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto',sans-serif;
+    padding: 90px 0px 50px 0px;
+}
+
+
 
 /* page3 */
 
 .video-revuelto{
-    height: 1080px;
-    width: 1900px;
+    height: 100%;
+    width:100%;
     resize: auto;
     overflow: auto;
+opacity: 0.8;
+}
 
+.imagenes-revuelto{
+    background-color: black;
+    padding-bottom: 100px;
 }
 
 .imagenes-revuelto article{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    /* justify-content: ; HORIZONTAL*/
+    /* align-content: ; VERTICAL */
 }
 
 .imagenes-revuelto article div {
-    margin: 5px;
+    margin: 15px;
+    border: solid 2px orange;
 }
 
 .imagenes-revuelto img {
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
+}
+
+.imagenes-revuelto h2{
+    color: orange;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto',sans-serif;
+    padding: 90px 0px 50px 0px;
 }
 
 
-/* Footer pie de pagina */
+/* Footer, pie de pagina */
 
-#contacto h2{
-    color: orange;
+.footer h6{
+color: orange;
+font-size: 30px;
 }
 
 .footer{
     display: flex;
-    padding: 30px;
+    padding: 35px;
+    padding-bottom: 60px;
     justify-content: space-between;
     align-items: center;
     justify-content:space-around;
     background-color: #181818;
     color: white;
+    font-family: 'Lato', sans-serif;
 }
 
 .logo-lambo2{
