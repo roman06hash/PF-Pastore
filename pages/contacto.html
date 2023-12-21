@@ -3,25 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos</title>
+    <title>Lamborghini - Contacto</title>
     <link rel="icon" href="../images/logo (1).webp" type="image.png">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 
 
-<body>
+<body class="body-contacto">
     <header>
-
+        <!--Pasar footer y header, y demas secciones a las pages para lograr los mismos footers y headers en las pages-->
+        <nav class="nav">
+            <div>       <img src="../images/logo (1).webp" alt="logo-lamborghini" class="logo1"> </div>
+            
+            <img src="../images/Lamborghini_logo_2.png" alt="logo-text-lamborghini2" class="logo2">
+                <ul>  
+                    <li class="li2"><a href="../index.html">Home</a></li>
+                    <li class="menu-lista"><a href="#modelos">Todos los modelos <i class="bi-chevron-down"></i> <i class="bi-chevron-double-down"></i> </a>     
+                        <ul class="lista-desplegable">
+                            <li class="li1"><a href="./pages/lamborghini-huracan.html">Huracan</a></li>
+                            <li class="li2"><a href="./pages/lamborghini-revuelto.html">Revuelto</a></li>
+                            <li class="li3"><a href="./pages/lamborghini-urus.html">Urus</a></li>
+                        </ul>
+                    </li>
+                </ul>
+          
+        
+        </nav>
+        
     </header>
 
     <main>
+        <section>
 
+            <article class="box-contacto">
+                <div class="content-contacto">
+                    <h1>Suscribite y  entra en contacto</h1>
+                
+                <form action=""></form>
+    
+                <div class="label-nombre">
+<i class="bi bi-person"></i>
+                    <label for="Nombre-usuario"></label>
+                 <input type="text" id="Nombre-usuario" placeholder="Nombre y Apellido" class="field">
+                </div>
+    
+                <div class="label-email">
+                    <i class="bi-envelope"></i>
+                    <label for="email-cliente"></label>
+                        <input type="email" id="email-cliente" placeholder="Email" class="field-email">
+                    </div>
+    
+                    <div>
+                        <input type="submit" value="Suscribirse" class="btn-submit">
+                        </div>
+
+                        <h2>COMPLETA LOS DATOS</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, itaque voluptas ratione odit incidunt possimus vel obcaecati temporibus, odio eaque illum. Ex accusamus molestiae doloribus totam illo? Provident, sint animi.</p>
+                </div>
+            </article>
+        
+        </section>
     </main>
 
-<footer>
-
-</footer>
+    <footer id="footer" class="footer">
+        <div >
+            <h6>Lamborghini</h6>
+             <hr>
+            <ul>
+                <li> <a href="../#modelos">Todos los vehiculos</a></li>
+                <li> <a href="./pages/lamborghini-huracan.html">Huracan</a></li>
+                <li> <a href="./pages/lamborghini-revuelto.html">Revuelto</a></li>
+                <li> <a href="./pages/lamborghini-urus.html">Urus</a></li>
+                <li> <a href="../#prueba-de-manejo">Solicite su prueba de manejo</a></li>
+                <li> <a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="index.html">Volver hacia arriba</a></li> 
+            </ul>
+        </div>
+    
+    
+        <div id="contacto">
+            
+            <h6>Contactanos y seguinos</h6>
+            <hr>
+            <ul>
+                <li>
+                    <i class="bi bi-instagram"></i>
+                    <a href="https://www.instagram.com/lamborghini/" target="blank">Instagram</a>
+                </li>
+                <li>
+                    <i class="bi bi-facebook"></i>
+                    <a href="https://www.facebook.com/Lamborghini" target="blank">Facebook</a>
+                </li>
+                <li>
+                    <i class="bi bi-twitter-x"></i>
+                    <a href="https://twitter.com/Lamborghini" target="blank">Twitter X</a>
+                </li>
+                <li>
+                    <i class="bi bi-youtube"></i>
+                    <a href="https://www.youtube.com/channel/UC9DXZC8BCDOW6pYAQKgozqw" target="blank">Youtube</a>
+                </li>
+            </ul>
+            
+            <p>Para enterarte de las ultimas noticias y novedades.</p>
+            
+            
+        </div> 
+    
+    
+    <div>
+    <div>
+        <h6>Suscribite y unite a la familia Lamborghini!</h6>
+        <hr>
+        <form action=""></form>
+    
+        <div>
+            <label for="Nombre-usuario">Ingrese su Nombre y apellido</label>
+         <input type="text" id="Nombre-usuario" placeholder="Ej: Ferruccio Lamborghini">
+        </div>
+    
+         
+    <div>
+    <label for="email-cliente">Ingrese su email:</label>
+        <input type="email" id="email-cliente" placeholder="Ej: lamborghini@gmail.com">
+    </div>
+        
+        
+    <div>
+    <input type="submit" value="Suscribirse">
+    </div>
+    
+        <p>Suscrbiendosé, nos contáctaremos en la brevedad <br> y ustéd recibirá novedades y ofertas exclusivas en su correo. </p>
+        
+    
+    </div>
+    </div>
+    
+    </footer>
 
 </body>
 </html>
