@@ -1,0 +1,23 @@
+$primary-color: orange;
+$secondary-color: orangered;
+$terciary-color:#181818;
+$primary-font: "Roboto", sans-serif;
+
+/* Etiquetas generales de la pagina */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $primary-font;
+}
+
+ul{
+    list-style: none;
+
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}

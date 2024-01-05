@@ -1,0 +1,662 @@
+/* Encabezado */
+
+header{
+    .nav{background-color: $terciary-color;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+        font-family: $primary-font;
+    
+        .lista-ul{
+            padding-left: 45px;
+        }
+    
+    
+        a{
+            text-decoration: none;
+            color: $primary-color;
+            font-family: $primary-font;
+        }
+    
+        .li1:hover a,.li2:hover a,.li3:hover a,.li4:hover a,.li-home:hover a{
+            color: $secondary-color;
+            text-decoration:underline
+        }
+
+        .lista-desplegable{
+            background-color: $terciary-color;
+            border: 2px solid $primary-color;
+        position: absolute;
+        display: none;
+        z-index: 2;
+        }
+
+        .menu-lista:hover{
+
+            .lista-desplegable{
+                display: block;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+            }
+        }
+
+        .logo1{
+            background-color:none;
+            height: 69px;
+            width: 70px;
+            position:scroll;
+            display: flex;
+            justify-content: left;
+            margin-right: 0px;
+        
+            /* logo de lamborghini */
+        }
+        
+        .logo2{
+            height: 60px;
+            width: 199px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px;
+            margin: 10px 10px 10px 10px;
+        
+            /* logo letras lamborghini */
+        }
+
+        li{
+            display: inline-block;
+        font-size: 20px;
+        padding: 20px;
+        }
+
+        .bi-chevron-double-down{
+            display: none;
+        }
+
+        .menu-lista:hover .bi-chevron-down {
+            display: none;
+        }
+        
+        .menu-lista:hover .bi-chevron-double-down {
+            display: inline;
+        }
+
+    }
+}
+
+/* Section 1 */
+
+.portada {
+    height: 100vh;
+    width: 100%;
+    resize: both;
+    overflow: auto;
+    background-image: url(../images/lamborghini-22.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+
+    .titulo{
+        font-family: $primary-font;
+        color: black;
+        font-size: 50px;
+    margin-left: 130px;
+    margin-top: 145px;
+    }
+    
+
+    span{
+        font-style: italic;
+    }
+}
+
+/* Section 2 */
+
+.modelos{
+
+    display: flex;
+    flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ background-color: $terciary-color;
+
+    span{
+        font-style: italic;
+    }
+
+    h1{
+        text-align: center;
+        padding: 20px;
+        }
+
+    h2,h3,h4{
+        font-size: 22px;
+        font-family: $primary-font;
+    }
+
+    .titulo1{
+        text-align: center;
+        margin-top: 79px;
+        margin-bottom: 50px;
+        width: 100%;
+        color: aliceblue;
+        font-family: $primary-font;
+    }
+
+    article{
+        background-color: grey;
+        width: 50vh;
+        height: 60vh;
+        margin: 40px;
+        border: 2px solid $primary-color;
+        width: 450px;
+        border-radius: 10px;
+        display: inline-block;
+        text-align: center;
+        padding-top: 30px;
+        margin-bottom: 100px;
+
+        ul{
+            list-style: none;
+            padding: 0; 
+        }
+
+        button {
+            height: 4.5vh;
+            width: 11.25vh;
+            color:white;
+            background-color: black;
+            margin-top: 20px;
+            border: 2px white solid;
+        }
+    }
+
+        .lamborghini{
+
+            &huracan{
+                height: 19vh;
+            width: 42vh;
+            position: scroll;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top:66px;
+            }
+
+            &revuelto{
+                height: 26vh;
+            width: 53vh;
+            position: scroll;
+            }
+
+            &urus{
+                height: 27vh;
+            width: 40vh;
+            position: scroll;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .lamborghini-urus{
+                p{
+                    font-family: $primary-font;
+                }
+            }
+
+            &-urus{
+           @extend.lamborghini-urus
+            }
+
+
+         .cuerpo-tarjeta{
+            padding: 29px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+         }
+
+        .boton{
+            font-family: $primary-font;
+    border-radius: 200px;
+
+    &:hover{
+        color: $primary-color;
+        cursor:pointer;
+        border: 2px $primary-color solid;
+    }
+
+        }
+}
+
+
+/* Section 3 */
+
+.pruebademanejo{
+    height: 100vh;
+    width: 100%;
+    resize: both;
+    overflow: auto;
+    background-image: url(../images/lamborghini-prueba-de-manejo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    background-attachment: scroll;
+    position: scroll;
+    color:white;
+
+    &-titulo{
+        color: black;
+    font-size: 50px;
+    font-family: $primary-font;
+margin-left: 90px;
+margin-top: 130px;
+    }
+
+    &-texto{
+        color: black;
+    margin-left: 90px;
+    font-size: 3vh;
+    font-family: $primary-font;
+    }
+
+    &-contacto{
+        max-width: 100px;
+    margin-left: 300px;
+    margin-top: 14px;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: $primary-font;
+
+
+    &:hover{
+color: white;
+text-decoration: underline;
+    }
+    }
+}
+
+/* Section 4 */
+
+.concesionarios{
+    background-color:$terciary-color;
+
+    .conc1{
+        color: $primary-color;
+        display: flex;
+    justify-content: center;
+    padding:20px;
+    font-size: 2vh;
+    font-family: $primary-font;
+    }
+
+    .conc{
+        color: white;
+        display: flex;
+    justify-content: center;
+    padding:20px;
+    font-family: $primary-font;
+    }
+
+
+}
+
+
+@media(max-width: 830px)
+/* RESPONSIVE IPAD */
+{
+.portada{
+    width: 820px;
+height: 610px;
+    }
+
+    .titulo{
+        font-size: 35px;
+    }
+
+    .pruebademanejo{
+        width: 820px;
+    height: 797px;
+    }
+
+    .titulo-pruebademanejo{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .texto-pruebademanejo{
+        display: flex;
+        justify-content: center;
+font-size: 20px;
+    }
+
+    .contacto-pruebademanejo{
+        display: flex;
+        justify-content: center;
+font-size: 30px;
+    }
+
+.maps{
+    width: 820px;
+}
+
+#contacto{
+    padding: 50px;
+}
+}
+
+    /* RESPONSIVE Iphone11 (420px) Index.html */
+@media (max-width: 420px) {
+    /* Encabezado */
+    .nav {
+        width: 425px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo1 {
+        margin-right: 0;
+    }
+
+    .logo2 {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 10px 0;
+    }
+
+    nav li {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .lista-desplegable {
+        position: static;
+        display: none;
+    }
+
+    .menu-lista:hover .lista-desplegable {
+        display: none;
+    }
+
+    .bi-chevron-down{
+        display: none;
+    }
+
+    /* Sección 1 - Portada */
+    .portada {
+        display: none;
+    }
+
+    .titulo {
+        display: none;
+    }
+
+    /* Sección 2 - Modelos */
+    .modelos article {
+        width: 425px;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .modelos h1 {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .cuerpo-tarjeta{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+   .lamborghinihuracan{
+    height: 200px;
+    width: 300px;
+   }
+
+    .modelos img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .lamborghinirevuelto{
+        height: 200px;
+        width: 350px;
+    }
+
+    .lamborghiniurus{
+        height: 200px;
+        width: 300px;
+    }
+
+    .lamborghini-urus{
+        padding-bottom: 20px;
+    }
+
+    /* Sección 3 - Prueba de Manejo */
+    .pruebademanejo {
+        width: 425px;
+        padding: 15px;
+    }
+
+    
+    .titulo-pruebademanejo {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+
+    
+    .texto-pruebademanejo {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    
+    .contacto-pruebademanejo {
+        display: flex;
+        justify-content: center;
+        margin-right: 400px;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    
+    .conc,
+    .conc1 {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .maps{
+        width: 420px;
+    }
+
+    /* Footer */
+    #footer {
+        padding: 15px;
+        width: 425px;
+    }
+
+    #footer div {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #footer h6 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    #footer ul {
+        padding-left: 0;
+        list-style: none;
+    }
+
+    #footer li {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    #footer p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    #footer form {
+        margin-bottom: 15px;
+    }
+
+    #footer input[type="text"],
+    #footer input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    #footer input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+    }
+
+}
+/* RESPONSIVE TABLET PAGE CONTACTO */
+@media (max-width: 820px) {
+    .box-contacto {
+        margin: 50px auto !important; 
+        width: auto;
+    }
+
+    .content-contacto {
+        padding: 20px;
+    }
+
+    .field,
+    .field-email {
+        width: 100%;
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
+}
+
+/* RESPONSIVE PAGE CONTACTO IHPONE */
+
+@media (max-width: 414px) {
+    .nav{
+        width: 425px;
+    }
+
+    .box-contacto {
+        width: 414px !important;
+        height: 500px;   
+    }
+
+    .contacto-titulo{
+        margin-top: 50px;
+    }
+
+    .label-nombre{
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+        width: 200px;
+        height: auto;
+    }
+
+    .label-email{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+         width: 200px;
+         height: auto;
+     }
+
+
+    .content-contacto {
+        width: 414px;
+        height: 500px;
+        padding: 10px;
+    }
+
+    .field,.field-email {
+        width: 414px;
+    }
+
+    .btn-submit {
+        width: 200px;
+    }
+
+    #footer{
+        width: 425px;
+        font-size: 4px;
+        padding: 100px;
+    }
+}
+
+/* Footer, pie de pagina */
+
+.footer{
+    background-color: $terciary-color;
+    width: 100%;
+    
+    .grupo1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+    
+        .box{
+            figure{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                img{
+                    width: 250px;
+                }
+    
+    
+            }
+    
+            h2{
+                color: white;
+                font-family: $primary-font;
+                margin-bottom: 25px;
+                font-size: 20px;
+    
+            }
+    
+            p{
+                color: #efefef;
+                margin-bottom: 10px;
+            }
+        }
+    
+        .red-social{
+            a{
+                display: inline-block;
+                text-decoration: none;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                color: white;
+                margin-right: 10px;
+                background-color: black;
+                text-align: center;
+    
+                &:hover{
+                    color: orange;
+                }
+            }
+        }
+    }
+} 
+}

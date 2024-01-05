@@ -1,0 +1,68 @@
+/* Page 4 Contacto */
+
+.box-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: $terciary-color;
+margin: 100px 600px 100px 600px;
+border: solid 3px $primary-color;
+border-radius: 20px;
+font-family: $primary-font;
+width: 700px;
+height: 700px;
+
+.content-contacto{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+   padding: 180px 20px 200px 20px;
+
+   h1{ margin-bottom: 20px;
+    font-family: $primary-font;}
+}
+
+}
+
+.info-extra{
+    display: block;
+    margin-top: 100px;
+    max-width: 600px;
+}
+
+.bi-person{
+    color: black;
+    background-color: $primary-color;
+
+}
+
+.bi-envelope{
+    color: black;
+    background-color: $primary-color;
+}
+
+
+.field{
+    margin: 20px 20px 20px 0px;
+    padding: 10px;
+    width: 500px;
+}
+
+.field-email{
+    margin: 20px 20px 20px 0px;
+    padding: 10px;
+    width: 500px;
+}
+
+.btn-submit{
+    margin-top: 20px;
+height: 30px;
+width: 150px;
+}
+
+.body-contacto{
+    background-color: rgb(95, 95, 95);
+}
