@@ -23,29 +23,28 @@ header .nav {
   flex-direction: row;
   align-items: center;
   padding: 1rem;
-  font-family: "Roboto", sans-serif;
 }
 header .nav .lista-ul {
   padding-left: 45px;
 }
 header .nav a {
   text-decoration: none;
-  color: orange;
+  color: #f9fffe;
   font-family: "Roboto", sans-serif;
 }
 header .nav .li1:hover a, header .nav .li2:hover a, header .nav .li3:hover a, header .nav .li4:hover a, header .nav .li-home:hover a {
-  color: orangered;
-  text-decoration: underline;
+  color: orange;
+  transition: all 0.3s ease-in-out 0s;
 }
 header .nav .lista-desplegable {
   background-color: #181818;
   border: 2px solid orange;
+  border-radius: 5px;
   position: absolute;
   display: none;
   z-index: 2;
 }
 header .nav .menu-lista:hover .lista-desplegable {
-  display: block;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -58,7 +57,12 @@ header .nav .logo1 {
   display: flex;
   justify-content: left;
   margin-right: 0px;
+  transition: transform, 0.2s ease-in-out 0s;
   /* logo de lamborghini */
+}
+header .nav .logo1:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
 }
 header .nav .logo2 {
   height: 60px;
@@ -72,7 +76,7 @@ header .nav .logo2 {
 }
 header .nav li {
   display: inline-block;
-  font-size: 20px;
+  font-size: 19px;
   padding: 20px;
 }
 header .nav .bi-chevron-double-down {
@@ -115,12 +119,15 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
   justify-content: center;
   align-items: center;
   background-color: #181818;
-  /* Section 3 */
-  /* Section 4 */
-  /* RESPONSIVE Iphone11 (420px) Index.html */
-  /* RESPONSIVE TABLET PAGE CONTACTO */
-  /* RESPONSIVE PAGE CONTACTO IHPONE */
-  /* Footer, pie de pagina */
+}
+.modelos .lamborghini-huracan, .modelos .lamborghini-urus, .modelos .lamborghini-revuelto {
+  box-shadow: 10px 10px 5px;
+  transition: transform, box-shadow, 0.4s ease-in-out 0s;
+}
+.modelos .lamborghini-huracan:hover, .modelos .lamborghini-urus:hover, .modelos .lamborghini-revuelto:hover {
+  transform: scale(1.1);
+  box-shadow: 15px 15px 9px;
+  transition-duration: 0.7s;
 }
 .modelos span {
   font-style: italic;
@@ -138,11 +145,11 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
   margin-top: 79px;
   margin-bottom: 50px;
   width: 100%;
-  color: aliceblue;
+  color: #f9fffe;
   font-family: "Roboto", sans-serif;
 }
 .modelos article {
-  background-color: grey;
+  background-color: #919191;
   width: 50vh;
   height: 60vh;
   margin: 40px;
@@ -163,89 +170,56 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
   width: 11.25vh;
   color: white;
   background-color: black;
-  margin-top: 20px;
-  border: 2px white solid;
+  margin-top: 30px;
+  transition: transform, box-shadow, 0.3s ease 0s;
+}
+.modelos article button:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 8px 15px black;
+  transition-duration: 0.5;
 }
 .modelos .lamborghinihuracan {
   height: 19vh;
   width: 42vh;
   position: scroll;
-  font-family: Arial, Helvetica, sans-serif;
   margin-top: 66px;
+  filter: drop-shadow(4px 4px 2px);
 }
 .modelos .lamborghinirevuelto {
   height: 26vh;
   width: 53vh;
   position: scroll;
+  filter: drop-shadow(4px 4px 2px);
 }
 .modelos .lamborghiniurus {
   height: 27vh;
   width: 40vh;
   position: scroll;
-  font-family: Arial, Helvetica, sans-serif;
 }
-.modelos .lamborghini .lamborghini-urus p {
+.modelos .lamborghini-urus p {
   font-family: "Roboto", sans-serif;
 }
-.modelos .lamborghini .cuerpo-tarjeta {
+.modelos .cuerpo-tarjeta {
   padding: 29px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-.modelos .lamborghini .boton {
+.modelos .boton {
   font-family: "Roboto", sans-serif;
   border-radius: 200px;
 }
-.modelos .lamborghini .boton:hover {
+.modelos .boton:hover {
   color: orange;
   cursor: pointer;
   border: 2px orange solid;
 }
-.modelos .pruebademanejo {
-  height: 100vh;
-  width: 100%;
-  resize: both;
-  overflow: auto;
-  background-image: url(../images/lamborghini-prueba-de-manejo.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: scroll;
-  position: scroll;
-  color: white;
+
+/* Section 4 */
+.concesionarios {
+  background-color: black;
 }
-.modelos .pruebademanejo-titulo {
-  color: black;
-  font-size: 50px;
-  font-family: "Roboto", sans-serif;
-  margin-left: 90px;
-  margin-top: 130px;
-}
-.modelos .pruebademanejo-texto {
-  color: black;
-  margin-left: 90px;
-  font-size: 3vh;
-  font-family: "Roboto", sans-serif;
-}
-.modelos .pruebademanejo-contacto {
-  max-width: 100px;
-  margin-left: 300px;
-  margin-top: 14px;
-  display: flex;
-  color: black;
-  text-decoration: none;
-  font-size: 25px;
-  font-family: "Roboto", sans-serif;
-}
-.modelos .pruebademanejo-contacto:hover {
-  color: white;
-  text-decoration: underline;
-}
-.modelos .concesionarios {
-  background-color: #181818;
-}
-.modelos .concesionarios .conc1 {
+.concesionarios .conc1 {
   color: orange;
   display: flex;
   justify-content: center;
@@ -253,248 +227,252 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
   font-size: 2vh;
   font-family: "Roboto", sans-serif;
 }
-.modelos .concesionarios .conc {
+.concesionarios .conc {
   color: white;
   display: flex;
   justify-content: center;
   padding: 20px;
   font-family: "Roboto", sans-serif;
 }
+
 @media (max-width: 830px) {
-  .modelos .portada {
+  .portada {
     width: 820px;
     height: 610px;
   }
-  .modelos .titulo {
+  .titulo {
     font-size: 35px;
   }
-  .modelos .pruebademanejo {
+  .pruebademanejo {
     width: 820px;
     height: 797px;
   }
-  .modelos .titulo-pruebademanejo {
+  .titulo-pruebademanejo {
     display: flex;
     justify-content: center;
     font-size: 30px;
   }
-  .modelos .texto-pruebademanejo {
+  .texto-pruebademanejo {
     display: flex;
     justify-content: center;
     font-size: 20px;
   }
-  .modelos .contacto-pruebademanejo {
+  .contacto-pruebademanejo {
     display: flex;
     justify-content: center;
     font-size: 30px;
   }
-  .modelos .maps {
+  .maps {
     width: 820px;
   }
-  .modelos #contacto {
+  #contacto {
     padding: 50px;
   }
 }
+/* RESPONSIVE Iphone11 (420px) Index.html */
 @media (max-width: 420px) {
-  .modelos {
-    /* Encabezado */
-    /* Sección 1 - Portada */
-    /* Sección 2 - Modelos */
-    /* Sección 3 - Prueba de Manejo */
-    /* Footer */
-  }
-  .modelos .nav {
+  /* Encabezado */
+  .nav {
     width: 425px;
     flex-direction: column;
     align-items: center;
   }
-  .modelos .logo1 {
+  .logo1 {
     margin-right: 0;
   }
-  .modelos .logo2 {
+  .logo2 {
     position: relative;
     top: 0;
     right: 0;
     margin: 10px 0;
   }
-  .modelos nav li {
+  nav li {
     padding: 10px;
     font-size: 16px;
   }
-  .modelos .lista-desplegable {
+  .lista-desplegable {
     position: static;
     display: none;
   }
-  .modelos .menu-lista:hover .lista-desplegable {
+  .menu-lista:hover .lista-desplegable {
     display: none;
   }
-  .modelos .bi-chevron-down {
+  .bi-chevron-down {
     display: none;
   }
-  .modelos .portada {
+  /* Sección 1 - Portada */
+  .portada {
     display: none;
   }
-  .modelos .titulo {
+  .titulo {
     display: none;
   }
-  .modelos .modelos article {
+  /* Sección 2 - Modelos */
+  .modelos article {
     width: 425px;
     margin: 10px 0px 0px 0px;
   }
-  .modelos .modelos h1 {
+  .modelos h1 {
     font-size: 18px;
     padding: 10px;
   }
-  .modelos .cuerpo-tarjeta {
+  .cuerpo-tarjeta {
     margin-bottom: 0px;
     padding-bottom: 0px;
   }
-  .modelos .lamborghinihuracan {
+  .lamborghinihuracan {
     height: 200px;
     width: 300px;
   }
-  .modelos .modelos img {
+  .modelos img {
     max-width: 100%;
     height: auto;
   }
-  .modelos .lamborghinirevuelto {
+  .lamborghinirevuelto {
     height: 200px;
     width: 350px;
   }
-  .modelos .lamborghiniurus {
+  .lamborghiniurus {
     height: 200px;
     width: 300px;
   }
-  .modelos .lamborghini-urus {
+  .lamborghini-urus {
     padding-bottom: 20px;
   }
-  .modelos .pruebademanejo {
+  /* Sección 3 - Prueba de Manejo */
+  .pruebademanejo {
     width: 425px;
     padding: 15px;
   }
-  .modelos .titulo-pruebademanejo {
+  .titulo-pruebademanejo {
     font-size: 22px;
     margin-top: 15px;
   }
-  .modelos .texto-pruebademanejo {
+  .texto-pruebademanejo {
     font-size: 12px;
     margin-top: 10px;
   }
-  .modelos .contacto-pruebademanejo {
+  .contacto-pruebademanejo {
     display: flex;
     justify-content: center;
     margin-right: 400px;
     font-size: 16px;
     margin-top: 15px;
   }
-  .modelos .conc,
-  .modelos .conc1 {
+  .conc,
+  .conc1 {
     font-size: 16px;
     padding: 10px;
   }
-  .modelos .maps {
+  .maps {
     width: 420px;
   }
-  .modelos #footer {
+  /* Footer */
+  #footer {
     padding: 15px;
     width: 425px;
   }
-  .modelos #footer div {
+  #footer div {
     width: 100%;
     max-width: 100%;
   }
-  .modelos #footer h6 {
+  #footer h6 {
     font-size: 18px;
     margin-bottom: 10px;
   }
-  .modelos #footer ul {
+  #footer ul {
     padding-left: 0;
     list-style: none;
   }
-  .modelos #footer li {
+  #footer li {
     font-size: 14px;
     margin-bottom: 5px;
   }
-  .modelos #footer p {
+  #footer p {
     font-size: 12px;
     margin-bottom: 15px;
   }
-  .modelos #footer form {
+  #footer form {
     margin-bottom: 15px;
   }
-  .modelos #footer input[type=text],
-  .modelos #footer input[type=email] {
+  #footer input[type=text],
+  #footer input[type=email] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
   }
-  .modelos #footer input[type=submit] {
+  #footer input[type=submit] {
     width: 100%;
     padding: 12px;
   }
 }
+/* RESPONSIVE TABLET PAGE CONTACTO */
 @media (max-width: 820px) {
-  .modelos .box-contacto {
+  .box-contacto {
     margin: 50px auto !important;
     width: auto;
   }
-  .modelos .content-contacto {
+  .content-contacto {
     padding: 20px;
   }
-  .modelos .field,
-  .modelos .field-email {
+  .field,
+  .field-email {
     width: 100%;
   }
-  .modelos .btn-submit {
+  .btn-submit {
     width: 100%;
   }
 }
+/* RESPONSIVE PAGE CONTACTO IHPONE */
 @media (max-width: 414px) {
-  .modelos .nav {
+  .nav {
     width: 425px;
   }
-  .modelos .box-contacto {
+  .box-contacto {
     width: 414px !important;
     height: 500px;
   }
-  .modelos .contacto-titulo {
+  .contacto-titulo {
     margin-top: 50px;
   }
-  .modelos .label-nombre {
+  .label-nombre {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 200px;
     height: auto;
   }
-  .modelos .label-email {
+  .label-email {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 200px;
     height: auto;
   }
-  .modelos .content-contacto {
+  .content-contacto {
     width: 414px;
     height: 500px;
     padding: 10px;
   }
-  .modelos .field, .modelos .field-email {
+  .field, .field-email {
     width: 414px;
   }
-  .modelos .btn-submit {
+  .btn-submit {
     width: 200px;
   }
-  .modelos #footer {
+  #footer {
     width: 425px;
     font-size: 4px;
     padding: 100px;
   }
 }
-.modelos .footer {
+/* Footer, pie de pagina */
+.footer {
+  background: linear-gradient(black 10%, rgb(170, 91, 0));
   background-color: #181818;
   width: 100%;
 }
-.modelos .footer .grupo1 {
+.footer .grupo1 {
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -503,27 +481,34 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
   grid-gap: 50px;
   padding: 45px 0px;
 }
-.modelos .footer .grupo1 .box figure {
+.footer .grupo1 .box figure {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.modelos .footer .grupo1 .box figure img {
+.footer .grupo1 .box figure img {
   width: 250px;
+  transition: transform, filter, 0.4s ease-in-out 0s;
+  transition-timing-function: ease-out;
 }
-.modelos .footer .grupo1 .box h2 {
+.footer .grupo1 .box figure img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(4px 4px 2px black);
+  transition-duration: 0.5s;
+}
+.footer .grupo1 .box h2 {
   color: white;
   font-family: "Roboto", sans-serif;
   margin-bottom: 25px;
   font-size: 20px;
 }
-.modelos .footer .grupo1 .box p {
+.footer .grupo1 .box p {
   color: #efefef;
   margin-bottom: 10px;
 }
-.modelos .footer .grupo1 .red-social a {
+.footer .grupo1 .red-social a {
   display: inline-block;
   text-decoration: none;
   width: 45px;
@@ -533,21 +518,40 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
   margin-right: 10px;
   background-color: black;
   text-align: center;
+  margin-bottom: 30px;
+  transition: color, transform, border, border-radius, box-shadow, 0.2s ease-in-out 0s;
 }
-.modelos .footer .grupo1 .red-social a:hover {
+.footer .grupo1 .red-social a:hover {
   color: orange;
+  transform: scale(1.2);
+  border: solid 1px black;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px black;
+  transition-duration: 0.3s;
+}
+.footer .grupo1 .box2 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 15px;
+  text-decoration: double;
+  transition: filter, text-decoration, 0.2s ease-in-out 0s;
+}
+.footer .grupo1 .box2:hover {
+  filter: drop-shadow(4px 4px 2px black);
+  text-decoration: underline;
 }
 
 /* page1 */
 .video-huracan {
+  display: flex;
+  max-width: 100%;
   opacity: 0.7;
-  width: 100%;
-  overflow: fill;
-  resize: fill;
+  overflow: auto;
+  resize: auto;
   z-index: 1;
 }
 
-.huracan {
+.huracan, .urus {
   position: absolute;
   z-index: 3;
   top: 380px;
@@ -555,29 +559,39 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
   font-size: 10vh;
   color: black;
   font-family: "Roboto", sans-serif;
+  text-shadow: 2px 2px 0px white;
 }
-.huracan span {
+.huracan span, .urus span {
   font-style: italic;
 }
 
-.imagenes-huracan {
+.imagenes-huracan, .imagenes-urus {
   background-color: black;
   padding-bottom: 100px;
 }
-.imagenes-huracan img {
-  width: 100%;
-  height: 100%;
+.imagenes-huracan img, .imagenes-urus img {
+  width: 500px;
+  height: 680px;
+  transition: transform, box-shadow, 0.4s 0s;
 }
-.imagenes-huracan article {
+.imagenes-huracan img:hover, .imagenes-urus img:hover {
+  transform: scale(1.1);
+  box-shadow: 15px 15px 9px;
+  transition-duration: 0.6s;
+  border: 2px solid orange;
+  border-radius: 25px;
+}
+.imagenes-huracan article, .imagenes-urus article {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.imagenes-huracan article div {
+.imagenes-huracan article div, .imagenes-urus article div {
   margin: 15px;
   border: solid 2px orange;
 }
-.imagenes-huracan h3 {
+.imagenes-huracan h3, .imagenes-urus h3 {
+  font-size: 28px;
   color: orange;
   display: flex;
   justify-content: center;
@@ -615,16 +629,12 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
 /* page2 */
 .video-urus {
   opacity: 0.8;
-  height: 100%;
-  width: 100%;
+  display: flex;
+  max-width: 100%;
   resize: auto;
   overflow: auto;
 }
 
-.imagenes-urus {
-  background-color: black;
-  padding-bottom: 100px;
-}
 .imagenes-urus article {
   display: flex;
   flex-wrap: wrap;
@@ -635,10 +645,19 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
   border: solid 2px orange;
 }
 .imagenes-urus img {
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 680px;
+  transition: transform, box-shadow, 0.4s 0s;
+}
+.imagenes-urus img:hover {
+  transform: scale(1.1);
+  box-shadow: 15px 15px 9px;
+  transition-duration: 0.6s;
+  border: 2px solid orange;
+  border-radius: 25px;
 }
 .imagenes-urus h2 {
+  font-size: 28px;
   color: orange;
   display: flex;
   justify-content: center;
@@ -648,11 +667,12 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
 
 /* page3 */
 .video-revuelto {
-  height: 100%;
-  width: 100%;
-  resize: auto;
-  overflow: auto;
+  display: flex;
+  max-width: 100%;
   opacity: 0.8;
+  overflow: auto;
+  resize: auto;
+  z-index: 1;
 }
 
 .imagenes-revuelto {
@@ -689,68 +709,70 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
 }
 
 /* Page 4 Contacto */
-.box-contacto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #181818;
-  margin: 100px 600px 100px 600px;
-  border: solid 3px orange;
-  border-radius: 20px;
-  font-family: "Roboto", sans-serif;
-  width: 700px;
-  height: 700px;
+body {
+  background-color: black;
 }
-.box-contacto .content-contacto {
-  color: white;
+
+.formulario {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.formulario form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px orange;
+  border-radius: 15px;
+  text-align: center;
+  width: 800px;
+  background-color: whitesmoke;
+}
+.formulario form h2 {
+  color: black;
+  font-size: 35px;
+}
+.formulario form .input-group {
+  display: flex;
   flex-direction: column;
-  align-content: center;
-  padding: 180px 20px 200px 20px;
+  text-align: left;
 }
-.box-contacto .content-contacto h1 {
+.formulario form .input-group label {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.formulario form .input-group input, .formulario form .input-group textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
   margin-bottom: 20px;
-  font-family: "Roboto", sans-serif;
+  background-color: white;
+  border: 2px solid black;
+  outline: none;
 }
-
-.info-extra {
-  display: block;
-  margin-top: 100px;
-  max-width: 600px;
+.formulario form .input-group input::placeholder, .formulario form .input-group textarea::placeholder {
+  color: grey;
 }
-
-.bi-person {
-  color: black;
-  background-color: orange;
+.formulario form .submit {
+  text-align: center;
 }
-
-.bi-envelope {
-  color: black;
-  background-color: orange;
+.formulario form .submit .btn {
+  width: 200px;
+  font-size: 16px;
+  color: white;
+  border: 0;
+  border-radius: 25px;
+  background-color: black;
+  cursor: pointer;
+  transition: transform, box-shadow, 0.3s ease 0s;
 }
-
-.field {
-  margin: 20px 20px 20px 0px;
-  padding: 10px;
-  width: 500px;
-}
-
-.field-email {
-  margin: 20px 20px 20px 0px;
-  padding: 10px;
-  width: 500px;
-}
-
-.btn-submit {
-  margin-top: 20px;
-  height: 30px;
-  width: 150px;
-}
-
-.body-contacto {
-  background-color: rgb(95, 95, 95);
+.formulario form .submit .btn:hover {
+  color: orange;
+  border: 2px solid orange;
+  transform: translateY(-7px);
+  box-shadow: 0px 8px 15px black;
+  transition-duration: 0.5;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,11 +1,12 @@
 /* page3 */
 
 .video-revuelto{
-    height: 100%;
-    width:100%;
+    display: flex;
+    max-width: 100%;
+    opacity: 0.8;
+    overflow:auto;
     resize: auto;
-    overflow: auto;
-opacity: 0.8;
+    z-index: 1;
 }
 
 .imagenes-revuelto{

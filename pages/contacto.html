@@ -4,70 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lamborghini - Contacto</title>
-    <link rel="icon" href="../images/logo (1).webp" type="image.png">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="../images/logo_1.webp" type="image.png">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
-
-
-<body class="body-contacto">
+<body>
     <header>
         <!--Pasar footer y header, y demas secciones a las pages para lograr los mismos footers y headers en las pages-->
         <nav class="nav">
             <a href="../index.html">
-                <img src="../images/logo (1).webp" alt="logo-lamborghini" class="logo1">
+                <img src="../images/logo_1.webp" alt="logo-lamborghini" class="logo1">
             </a>
             
-            <img src="../images/Lamborghini_logo_2.png" alt="logo-text-lamborghini2" class="logo2">
+            <img src="../images/logo_2.png" alt="logo-text-lamborghini2" class="logo2">
             <ul class="lista-ul">  
-                <li class="menu-lista"><a href="#modelos">Todos los modelos <i class="bi-chevron-down"></i> <i class="bi-chevron-double-down"></i> </a>     
+                <li class="menu-lista"><a href="#modelos">TODOS LOS MODELOS<i class="bi-chevron-down"></i> <i class="bi-chevron-double-down"></i> </a>     
                     <ul class="lista-desplegable">
                         <li class="li1"><a href="../pages/lamborghini-huracan.html">Huracan</a></li>
                         <li class="li2"><a href="../pages/lamborghini-revuelto.html">Revuelto</a></li>
                         <li class="li3"><a href="../pages/lamborghini-urus.html">Urus</a></li>
                     </ul>
                 </li>
-                <li class="li4"><a href="../pages/contacto.html">Contacto</a></li>
+                <li class="li4"><a href="../pages/contacto.html">CONTACTO</a></li>
             </ul>
           
         
         </nav>
         
     </header>
-
+    <body>
     <main>
-        <section>
-
-            <article class="box-contacto">
-                <div class="content-contacto">
-                    <h1 class="contacto-titulo">SUSCRIBITE Y ENTRÁ EN CONTACTO</h1>
-                
-                <form action=""></form>
-    
-                <div class="label-nombre">
-<i class="bi bi-person"></i>
-                    <label for="Nombre-usuario"></label>
-                 <input type="text" id="Nombre-usuario" placeholder="Nombre y Apellido" class="field">
-                </div>
-    
-                <div class="label-email">
-                    <i class="bi-envelope"></i>
-                    <label for="email-cliente"></label>
-                        <input type="email" id="email-cliente" placeholder="Email" class="field-email">
-                    </div>
-
-                    <div class="submit-button">
-                        <input type="submit" value="Suscribirse" class="btn-submit">
-                    </div>
-
-                    
-                    <div class="info-extra">
-                        <p>¡Hola apasionado de la velocidad y el lujo! Estamos emocionados de que estés a punto de sumergirte en el asombroso mundo de Lamborghini. Antes de llenar este formulario de contacto, queremos agradecerte por considerar nuestra marca para hacer realidad tus sueños automotrices. Gracias por elegir la emoción, el estilo y el rendimiento inigualables que ofrecemos. Estamos ansiosos por recibir tu mensaje y comenzar esta increíble aventura juntos. ¡Bienvenido al emocionante mundo de Lamborghini!</p>
-                </div>
-    
-                </article>
+  <section class="formulario">
+    <form>
+        <h2>CONTÁCTANOS</h2>
+        <div class="input-group">
         
-        </section>
+        <label for="name">Nombre y apellido</label>
+        <input type="text" name="name" id="name" placeholder="Nombre y apellido">
+        
+        <label for="phone"> Número de Telefono</label>
+        <input type="tel" name="phone" id="phone" placeholder="Telefono">
+        
+        <label for="email">Correo electronico </label>
+        <input type="email" name="email" id="email" placeholder="Email">
+        
+        <label for="message">Mensaje</label>
+        <textarea name="message" id="message" cols="30" rows="5" placeholder="Motivo del contacto"></textarea>
+
+        <div class="submit">
+            <input type="submit" value="Enviar" class="btn">
+        </div>
+  </section>
+
+
+</div>
+
+</form>
     </main>
 
     <footer id="footer" class="footer">
@@ -75,7 +67,7 @@
             <div class="box">
             <figure>
                 <a href="../index.html">
-                    <img src="../images/Lamborghini_logo_2.png" alt="logo-lamborghini">
+                    <img src="../images/logo_2.png" alt="logo-lamborghini">
                                 </a>
             </figure>
             </div>
@@ -92,9 +84,13 @@
                     <a href="https://twitter.com/Lamborghini" class="bi bi-twitter-x"></a>
                     <a href="https://www.youtube.com/channel/UC9DXZC8BCDOW6pYAQKgozqw" class="bi bi-youtube"></a>
                 </div>
+                <div>
+                    <a href="./pages/contacto.html" class="box2">CONTACTANOS DE FORMA DIRECTA</a>
+                </div>
             </div>
         </div>
                 </footer>
-
 </body>
+
+
 </html>

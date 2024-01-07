@@ -1,68 +1,86 @@
 /* Page 4 Contacto */
 
-.box-contacto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-background-color: $terciary-color;
-margin: 100px 600px 100px 600px;
-border: solid 3px $primary-color;
-border-radius: 20px;
-font-family: $primary-font;
-width: 700px;
-height: 700px;
+body{
+    background-color: black;
+}
 
-.content-contacto{
-    color: white;
+.formulario{
+    font-family: $primary-font;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    align-content: center;
-   padding: 180px 20px 200px 20px;
 
-   h1{ margin-bottom: 20px;
-    font-family: $primary-font;}
+    form{
+        padding: 50px 55px;
+    box-shadow: 0 0 20px orange;
+    border-radius: 15px;
+    text-align: center;
+    width: 800px;
+    background-color: whitesmoke;
+
+    h2{
+        color: black;
+        font-size: 35px;
+    }
+
+    .input-group{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+
+        label{
+            color: black;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        input, textarea{
+            padding: 17px 25px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            background-color: white;
+            border: 2px solid black;
+            outline: none;
+        }
+
+        input::placeholder, textarea::placeholder{
+            color: grey;
+        }
+    }
+
+    .submit{
+        text-align: center;
+
+
+        .btn{
+            width: 200px;
+            font-size: 16px;
+            color: white;
+            border:0;
+            border-radius: 25px;
+            background-color: black;
+            cursor: pointer;
+            transition:transform,box-shadow, 0.3s ease 0s;
+        
+            &:hover{
+                color: orange;
+                border: 2px solid orange;
+                transform: translateY(-7px);
+                box-shadow: 0px 8px 15px black;
+                transition-duration: 0.5;
+            }
+        }
+    }
+    
+
+    }
 }
 
-}
-
-.info-extra{
-    display: block;
-    margin-top: 100px;
-    max-width: 600px;
-}
-
-.bi-person{
-    color: black;
-    background-color: $primary-color;
-
-}
-
-.bi-envelope{
-    color: black;
-    background-color: $primary-color;
-}
 
 
-.field{
-    margin: 20px 20px 20px 0px;
-    padding: 10px;
-    width: 500px;
-}
 
-.field-email{
-    margin: 20px 20px 20px 0px;
-    padding: 10px;
-    width: 500px;
-}
 
-.btn-submit{
-    margin-top: 20px;
-height: 30px;
-width: 150px;
-}
 
-.body-contacto{
-    background-color: rgb(95, 95, 95);
-}

@@ -6,7 +6,6 @@ header{
         flex-direction: row;
         align-items: center;
         padding: 1rem;
-        font-family: $primary-font;
     
         .lista-ul{
             padding-left: 45px;
@@ -15,18 +14,19 @@ header{
     
         a{
             text-decoration: none;
-            color: $primary-color;
+            color: #f9fffe;
             font-family: $primary-font;
         }
     
         .li1:hover a,.li2:hover a,.li3:hover a,.li4:hover a,.li-home:hover a{
-            color: $secondary-color;
-            text-decoration:underline
+            color: $primary-color;
+            transition: all 0.3s ease-in-out 0s;
         }
 
         .lista-desplegable{
             background-color: $terciary-color;
             border: 2px solid $primary-color;
+            border-radius: 5px;
         position: absolute;
         display: none;
         z-index: 2;
@@ -35,8 +35,7 @@ header{
         .menu-lista:hover{
 
             .lista-desplegable{
-                display: block;
-                    display: flex;
+                display: flex;
                     align-items: center;
                     flex-direction: column;
             }
@@ -50,8 +49,14 @@ header{
             display: flex;
             justify-content: left;
             margin-right: 0px;
+            transition:transform, 0.2s ease-in-out 0s;
         
             /* logo de lamborghini */
+
+            &:hover{
+                transform: scale(1.1);
+                transition-duration: 0.3s;
+            }
         }
         
         .logo2{
@@ -68,7 +73,7 @@ header{
 
         li{
             display: inline-block;
-        font-size: 20px;
+        font-size: 19px;
         padding: 20px;
         }
 
@@ -117,12 +122,30 @@ header{
 /* Section 2 */
 
 .modelos{
-
     display: flex;
     flex-wrap: wrap;
  justify-content: center;
  align-items: center;
  background-color: $terciary-color;
+
+ .lamborghini-huracan{
+ box-shadow: 10px 10px 5px;
+ transition:transform,box-shadow, 0.4s ease-in-out 0s;
+
+&:hover{
+    transform: scale(1.1);
+    box-shadow: 15px 15px 9px;
+    transition-duration: 0.7s;
+}
+ }
+
+ .lamborghini-revuelto{
+@extend .lamborghini-huracan;
+ }
+
+ .lamborghini-urus{
+@extend .lamborghini-huracan;
+ }
 
     span{
         font-style: italic;
@@ -143,12 +166,13 @@ header{
         margin-top: 79px;
         margin-bottom: 50px;
         width: 100%;
-        color: aliceblue;
+        color:#f9fffe ;
         font-family: $primary-font;
     }
 
     article{
-        background-color: grey;
+        background-color: 
+        #919191;
         width: 50vh;
         height: 60vh;
         margin: 40px;
@@ -170,32 +194,38 @@ header{
             width: 11.25vh;
             color:white;
             background-color: black;
-            margin-top: 20px;
-            border: 2px white solid;
+            margin-top: 30px;
+            transition:transform,box-shadow, 0.3s ease 0s;
+
+            &:hover{
+                transform: translateY(-7px);
+                box-shadow: 0px 8px 15px black;
+                transition-duration: 0.5;
+            }
         }
+
     }
 
-        .lamborghini{
-
-            &huracan{
-                height: 19vh;
+        .lamborghinihuracan{
+            height: 19vh;
             width: 42vh;
             position: scroll;
-            font-family: Arial, Helvetica, sans-serif;
             margin-top:66px;
-            }
+            filter: drop-shadow( 4px 4px 2px);
+        }
 
-            &revuelto{
+            .lamborghinirevuelto{
                 height: 26vh;
             width: 53vh;
             position: scroll;
+            filter: drop-shadow( 4px 4px 2px);
             }
 
-            &urus{
+            .lamborghiniurus{
                 height: 27vh;
             width: 40vh;
             position: scroll;
-            font-family: Arial, Helvetica, sans-serif;
+            
             }
 
             .lamborghini-urus{
@@ -203,12 +233,7 @@ header{
                     font-family: $primary-font;
                 }
             }
-
-            &-urus{
-           @extend.lamborghini-urus
-            }
-
-
+            
          .cuerpo-tarjeta{
             padding: 29px;
             display: flex;
@@ -229,59 +254,10 @@ header{
         }
 }
 
-
-/* Section 3 */
-
-.pruebademanejo{
-    height: 100vh;
-    width: 100%;
-    resize: both;
-    overflow: auto;
-    background-image: url(../images/lamborghini-prueba-de-manejo.jpeg);
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-size: cover;
-    background-attachment: scroll;
-    position: scroll;
-    color:white;
-
-    &-titulo{
-        color: black;
-    font-size: 50px;
-    font-family: $primary-font;
-margin-left: 90px;
-margin-top: 130px;
-    }
-
-    &-texto{
-        color: black;
-    margin-left: 90px;
-    font-size: 3vh;
-    font-family: $primary-font;
-    }
-
-    &-contacto{
-        max-width: 100px;
-    margin-left: 300px;
-    margin-top: 14px;
-    display: flex;
-    color: black;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: $primary-font;
-
-
-    &:hover{
-color: white;
-text-decoration: underline;
-    }
-    }
-}
-
 /* Section 4 */
 
 .concesionarios{
-    background-color:$terciary-color;
+    background-color:black;
 
     .conc1{
         color: $primary-color;
@@ -599,6 +575,7 @@ font-size: 30px;
 /* Footer, pie de pagina */
 
 .footer{
+    background: linear-gradient(black 10%, rgb(170, 91, 0));
     background-color: $terciary-color;
     width: 100%;
     
@@ -621,6 +598,13 @@ font-size: 30px;
     
                 img{
                     width: 250px;
+                    transition:transform,filter, 0.4s ease-in-out 0s;
+                    transition-timing-function: ease-out;
+                    &:hover{
+                        transform: scale(1.2);
+                        filter: drop-shadow(4px 4px 2px black);
+                        transition-duration: 0.5s;
+                    }
                 }
     
     
@@ -651,12 +635,31 @@ font-size: 30px;
                 margin-right: 10px;
                 background-color: black;
                 text-align: center;
+                margin-bottom: 30px;
+                transition:color, transform, border, border-radius, box-shadow, 0.2s ease-in-out 0s;
     
                 &:hover{
                     color: orange;
+                    transform: scale(1.2);
+                    border: solid 1px black;
+                    border-radius: 10px;
+                    box-shadow: 0px 8px 15px black;
+                    transition-duration: 0.3s;
                 }
             }
         }
+
+        .box2{
+                font-family: $primary-font;
+                color: white;
+                font-size: 15px;
+                text-decoration:double;
+                transition:filter, text-decoration, 0.2s ease-in-out 0s;
+
+                &:hover{
+                        filter: drop-shadow(4px 4px 2px black);
+                        text-decoration: underline;
+                }
+        }
     }
 } 
-}
