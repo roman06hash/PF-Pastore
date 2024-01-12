@@ -1,4 +1,15 @@
 /* page3 */
+header{
+    .nav{
+        @include tablet{
+            width: 100%;
+        }
+
+@include mobile{
+    width: 100%;
+}
+    }
+}
 
 .video-revuelto{
     display: flex;
@@ -43,5 +54,10 @@
     color: $primary-color;
     display: flex;
     justify-content: center;
-    margin-bottom: 65 px;
+    margin-bottom: 65px;
+
+    @include mobile{
+        margin-top: 20px;
+        font-size: 12px;
+    }
 }

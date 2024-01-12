@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Etiquetas generales de la pagina */
 * {
   margin: 0;
@@ -65,6 +64,7 @@ header .nav .logo1:hover {
   transition-duration: 0.3s;
 }
 header .nav .logo2 {
+  display: flex;
   height: 60px;
   width: 199px;
   position: absolute;
@@ -87,6 +87,16 @@ header .nav .menu-lista:hover .bi-chevron-down {
 }
 header .nav .menu-lista:hover .bi-chevron-double-down {
   display: inline;
+}
+@media screen and (max-width: 776px) {
+  header .nav {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 735px) {
+  header .nav .logo2 {
+    display: none;
+  }
 }
 
 /* Section 1 */
@@ -111,6 +121,15 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
 .portada span {
   font-style: italic;
 }
+@media screen and (max-width: 776px) {
+  .portada {
+    width: 100%;
+    height: 400px;
+  }
+  .portada .titulo {
+    display: none;
+  }
+}
 
 /* Section 2 */
 .modelos {
@@ -122,12 +141,12 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
 }
 .modelos .lamborghini-huracan, .modelos .lamborghini-urus, .modelos .lamborghini-revuelto {
   box-shadow: 10px 10px 5px;
-  transition: transform, box-shadow, 0.4s ease-in-out 0s;
+  transition: transform, box-shadow, 0.3s ease-in-out 0s;
 }
 .modelos .lamborghini-huracan:hover, .modelos .lamborghini-urus:hover, .modelos .lamborghini-revuelto:hover {
   transform: scale(1.1);
   box-shadow: 15px 15px 9px;
-  transition-duration: 0.7s;
+  transition-duration: 0.5s;
 }
 .modelos span {
   font-style: italic;
@@ -234,238 +253,13 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
   padding: 20px;
   font-family: "Roboto", sans-serif;
 }
+@media screen and (max-width: 776px) {
+  .concesionarios .maps {
+    width: 100%;
+    height: 400px;
+  }
+}
 
-@media (max-width: 830px) {
-  .portada {
-    width: 820px;
-    height: 610px;
-  }
-  .titulo {
-    font-size: 35px;
-  }
-  .pruebademanejo {
-    width: 820px;
-    height: 797px;
-  }
-  .titulo-pruebademanejo {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-  }
-  .texto-pruebademanejo {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-  }
-  .contacto-pruebademanejo {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-  }
-  .maps {
-    width: 820px;
-  }
-  #contacto {
-    padding: 50px;
-  }
-}
-/* RESPONSIVE Iphone11 (420px) Index.html */
-@media (max-width: 420px) {
-  /* Encabezado */
-  .nav {
-    width: 425px;
-    flex-direction: column;
-    align-items: center;
-  }
-  .logo1 {
-    margin-right: 0;
-  }
-  .logo2 {
-    position: relative;
-    top: 0;
-    right: 0;
-    margin: 10px 0;
-  }
-  nav li {
-    padding: 10px;
-    font-size: 16px;
-  }
-  .lista-desplegable {
-    position: static;
-    display: none;
-  }
-  .menu-lista:hover .lista-desplegable {
-    display: none;
-  }
-  .bi-chevron-down {
-    display: none;
-  }
-  /* Sección 1 - Portada */
-  .portada {
-    display: none;
-  }
-  .titulo {
-    display: none;
-  }
-  /* Sección 2 - Modelos */
-  .modelos article {
-    width: 425px;
-    margin: 10px 0px 0px 0px;
-  }
-  .modelos h1 {
-    font-size: 18px;
-    padding: 10px;
-  }
-  .cuerpo-tarjeta {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-  }
-  .lamborghinihuracan {
-    height: 200px;
-    width: 300px;
-  }
-  .modelos img {
-    max-width: 100%;
-    height: auto;
-  }
-  .lamborghinirevuelto {
-    height: 200px;
-    width: 350px;
-  }
-  .lamborghiniurus {
-    height: 200px;
-    width: 300px;
-  }
-  .lamborghini-urus {
-    padding-bottom: 20px;
-  }
-  /* Sección 3 - Prueba de Manejo */
-  .pruebademanejo {
-    width: 425px;
-    padding: 15px;
-  }
-  .titulo-pruebademanejo {
-    font-size: 22px;
-    margin-top: 15px;
-  }
-  .texto-pruebademanejo {
-    font-size: 12px;
-    margin-top: 10px;
-  }
-  .contacto-pruebademanejo {
-    display: flex;
-    justify-content: center;
-    margin-right: 400px;
-    font-size: 16px;
-    margin-top: 15px;
-  }
-  .conc,
-  .conc1 {
-    font-size: 16px;
-    padding: 10px;
-  }
-  .maps {
-    width: 420px;
-  }
-  /* Footer */
-  #footer {
-    padding: 15px;
-    width: 425px;
-  }
-  #footer div {
-    width: 100%;
-    max-width: 100%;
-  }
-  #footer h6 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  #footer ul {
-    padding-left: 0;
-    list-style: none;
-  }
-  #footer li {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  #footer p {
-    font-size: 12px;
-    margin-bottom: 15px;
-  }
-  #footer form {
-    margin-bottom: 15px;
-  }
-  #footer input[type=text],
-  #footer input[type=email] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  #footer input[type=submit] {
-    width: 100%;
-    padding: 12px;
-  }
-}
-/* RESPONSIVE TABLET PAGE CONTACTO */
-@media (max-width: 820px) {
-  .box-contacto {
-    margin: 50px auto !important;
-    width: auto;
-  }
-  .content-contacto {
-    padding: 20px;
-  }
-  .field,
-  .field-email {
-    width: 100%;
-  }
-  .btn-submit {
-    width: 100%;
-  }
-}
-/* RESPONSIVE PAGE CONTACTO IHPONE */
-@media (max-width: 414px) {
-  .nav {
-    width: 425px;
-  }
-  .box-contacto {
-    width: 414px !important;
-    height: 500px;
-  }
-  .contacto-titulo {
-    margin-top: 50px;
-  }
-  .label-nombre {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 200px;
-    height: auto;
-  }
-  .label-email {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 200px;
-    height: auto;
-  }
-  .content-contacto {
-    width: 414px;
-    height: 500px;
-    padding: 10px;
-  }
-  .field, .field-email {
-    width: 414px;
-  }
-  .btn-submit {
-    width: 200px;
-  }
-  #footer {
-    width: 425px;
-    font-size: 4px;
-    padding: 100px;
-  }
-}
 /* Footer, pie de pagina */
 .footer {
   background: linear-gradient(black 10%, rgb(170, 91, 0));
@@ -542,12 +336,24 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
 }
 
 /* page1 */
+@media screen and (max-width: 776px) {
+  header .nav {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .nav {
+    width: 100%;
+  }
+}
+
 .video-huracan {
-  display: flex;
-  max-width: 100%;
   opacity: 0.7;
+  display: flex;
+  width: 100%;
   overflow: auto;
   resize: auto;
+  position: relative;
   z-index: 1;
 }
 
@@ -564,6 +370,77 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
 .huracan span, .urus span {
   font-style: italic;
 }
+@media screen and (max-width: 776px) {
+  .huracan, .urus {
+    font-size: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -250%);
+  }
+}
+@media screen and (max-width: 576px) {
+  .huracan, .urus {
+    font-size: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-95%, -410%);
+  }
+}
+
+.info-pages {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 150px;
+  padding: 180px 200px 100px 200px;
+  background-color: black;
+}
+.info-pages .texto {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+@media screen and (max-width: 776px) {
+  .info-pages .texto {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .info-pages .texto {
+    font-size: 15px;
+  }
+}
+.info-pages .grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.info-pages .grids img {
+  border: solid 2px orange;
+  border-radius: 20px;
+  width: 700px;
+  height: 400px;
+}
+@media screen and (max-width: 776px) {
+  .info-pages .grids img {
+    height: 220px;
+    width: 600px;
+  }
+}
+@media screen and (max-width: 776px) {
+  .info-pages {
+    padding: 80px 20px 50px 20px;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .info-pages {
+    padding: 60px 10px 30px 10px;
+    gap: 20px;
+  }
+}
 
 .imagenes-huracan, .imagenes-urus {
   background-color: black;
@@ -573,6 +450,12 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
   width: 500px;
   height: 680px;
   transition: transform, box-shadow, 0.4s 0s;
+}
+@media screen and (max-width: 576px) {
+  .imagenes-huracan img, .imagenes-urus img {
+    width: 400px;
+    height: 550px;
+  }
 }
 .imagenes-huracan img:hover, .imagenes-urus img:hover {
   transform: scale(1.1);
@@ -599,34 +482,18 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
   padding: 90px 0px 50px 0px;
 }
 
-.info-pages {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  gap: 150px;
-  padding: 180px 200px 100px 200px;
-  background-color: black;
+/* page2 */
+@media screen and (max-width: 776px) {
+  header .nav {
+    width: 100%;
+  }
 }
-.info-pages .texto {
-  font-family: "Roboto", sans-serif;
-  font-size: 2.5vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-.info-pages .grids {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-.info-pages .grids img {
-  border: solid 2px orange;
-  border-radius: 20px;
-  width: 700px;
-  height: 400px;
+@media screen and (max-width: 576px) {
+  header .nav {
+    width: 100%;
+  }
 }
 
-/* page2 */
 .video-urus {
   opacity: 0.8;
   display: flex;
@@ -666,6 +533,17 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
 }
 
 /* page3 */
+@media screen and (max-width: 776px) {
+  header .nav {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .nav {
+    width: 100%;
+  }
+}
+
 .video-revuelto {
   display: flex;
   max-width: 100%;
@@ -705,7 +583,13 @@ header .nav .menu-lista:hover .bi-chevron-double-down {
   color: orange;
   display: flex;
   justify-content: center;
-  margin-bottom: 65 px;
+  margin-bottom: 65px;
+}
+@media screen and (max-width: 576px) {
+  .pre-sale {
+    margin-top: 20px;
+    font-size: 12px;
+  }
 }
 
 /* Page 4 Contacto */
@@ -773,6 +657,13 @@ body {
   transform: translateY(-7px);
   box-shadow: 0px 8px 15px black;
   transition-duration: 0.5;
+}
+@media screen and (max-width: 776px) {
+  .formulario {
+    width: 100%;
+    height: 500px;
+    padding: 200px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

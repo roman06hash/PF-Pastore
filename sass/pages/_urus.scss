@@ -1,4 +1,15 @@
 /* page2 */
+header {
+    .nav {
+        @include tablet {
+            width: 100%;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+}
 
 .video-urus{
     opacity: 0.8;
