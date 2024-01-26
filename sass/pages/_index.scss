@@ -1,14 +1,29 @@
 /* Encabezado */
 
 header{
-    .nav{background-color: $terciary-color;
+    .nav {
+        background-color: $terciary-color;
         display: flex;
         flex-direction: row;
         align-items: center;
         padding: 1rem;
-    
-        .lista-ul{
+
+
+
+        .list-icon {
+            cursor: pointer;
+            display: none;
+        }
+
+        .menu-hamburguesa {
+            display: none;
+        }
+
+        .lista-ul {
+            display: flex;
+            flex-direction: row;
             padding-left: 45px;
+            margin-top: 0;
         }
     
     
@@ -90,9 +105,106 @@ header{
             display: inline;
         }
 
-        @include tablet{
-width: 100%;
+        @include mobile {
+            .menu-hamburguesa {
+                display: none;
+            }
+
+            .list-icon {
+                display: inline;
+            }
+
+            .lista-ul {
+                display: none;
+                position: absolute;
+                top: 100px;  
+                left: 0;
+                width: 100%;
+                flex-direction: column;
+                background-color: $terciary-color;
+                z-index: 2;
+
+                .bi-chevron-double-down{
+                    display: none !important;
+                }
+
+                .bi-chevron-down{
+                    display: none;
+                }
+
+                .lista-desplegable{
+                    display: none !important;
+                }
+
+                li {
+                    padding: 10px;
+                    text-align: center;
+                }
+
+                a {
+                    color: $primary-color;
+                }
+
+            }
+
+            .menu-hamburguesa:checked + .lista-ul {
+                display: flex;
+
+            }
         }
+
+    @include tablet{
+        .menu-hamburguesa{
+            display: none;
+        }
+
+        .list-icon{
+            display: inline;
+        }
+
+        .lista-ul{
+                display: none;
+                position: absolute;
+                top: 100px;  
+                left: 0;
+                width: 100%;
+                flex-direction: column;
+                background-color: $terciary-color;
+                z-index: 2;
+
+
+                .bi-chevron-double-down{
+                    display: none !important;
+                }
+
+                .bi-chevron-down{
+                    display: none;
+                }
+
+                .lista-desplegable{
+                    display: none !important;
+                }
+
+                li {
+                    padding: 10px;
+                    text-align: center;
+                }
+
+                a {
+                    color: $primary-color;
+                }
+        }
+
+        .menu-hamburguesa:checked + .lista-ul {
+            display: flex;
+
+        }
+
+        .label-hamburguesa{
+            display: flex;
+        }
+
+    }
 
         @include mobile-tablet-logo2{
             .logo2{
@@ -100,9 +212,14 @@ width: 100%;
             }
         }
 
+        .list-icon{
+            color: white;
+        }
+
+        }
+
     }
 
-}
 
 /* Section 1 */
 
@@ -312,12 +429,12 @@ width: 100%;
 
 /* Footer, pie de pagina */
 
-.footer{
+.footer {
     background: linear-gradient(black 10%, rgb(170, 91, 0));
     background-color: $terciary-color;
     width: 100%;
-    
-    .grupo1{
+
+    .grupo1 {
         width: 100%;
         max-width: 1200px;
         margin: auto;
@@ -325,45 +442,54 @@ width: 100%;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 50px;
         padding: 45px 0px;
-    
-        .box{
-            figure{
+
+
+        .box {
+            figure {
                 width: 100%;
                 height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-    
-                img{
+
+
+
+                img {
                     width: 250px;
-                    transition:transform,filter, 0.4s ease-in-out 0s;
+                    transition: transform, filter, 0.4s ease-in-out 0s;
                     transition-timing-function: ease-out;
-                    &:hover{
+
+                    &:hover {
                         transform: scale(1.2);
                         filter: drop-shadow(4px 4px 2px black);
                         transition-duration: 0.5s;
                     }
                 }
-    
-    
             }
-    
-            h2{
+
+            h2 {
                 color: white;
                 font-family: $primary-font;
                 margin-bottom: 25px;
                 font-size: 20px;
-    
+
+                @include tablet {
+                    font-size: 16px;
+                }
+
+                @include mobile {
+                    font-size: 14px;
+                }
             }
-    
-            p{
+
+            p {
                 color: #efefef;
                 margin-bottom: 10px;
             }
         }
-    
-        .red-social{
-            a{
+
+        .red-social {
+            a {
                 display: inline-block;
                 text-decoration: none;
                 width: 45px;
@@ -374,9 +500,9 @@ width: 100%;
                 background-color: black;
                 text-align: center;
                 margin-bottom: 30px;
-                transition:color, transform, border, border-radius, box-shadow, 0.2s ease-in-out 0s;
-    
-                &:hover{
+                transition: color, transform, border, border-radius, box-shadow, 0.2s ease-in-out 0s;
+
+                &:hover {
                     color: orange;
                     transform: scale(1.2);
                     border: solid 1px black;
@@ -387,17 +513,26 @@ width: 100%;
             }
         }
 
-        .box2{
-                font-family: $primary-font;
-                color: white;
-                font-size: 15px;
-                text-decoration:double;
-                transition:filter, text-decoration, 0.2s ease-in-out 0s;
+        .box2 {
+            font-family: $primary-font;
+            color: white;
+            font-size: 15px;
+            text-decoration: double;
+            transition: filter, text-decoration, 0.2s ease-in-out 0s;
 
-                &:hover{
-                        filter: drop-shadow(4px 4px 2px black);
-                        text-decoration: underline;
-                }
+            &:hover {
+                filter: drop-shadow(4px 4px 2px black);
+                text-decoration: underline;
+            }
+
+            @include tablet {
+                font-size: 14px;
+            }
+
+            @include mobile {
+                font-size: 12px;
+
+            }
         }
     }
-} 
+}

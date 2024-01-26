@@ -11,8 +11,14 @@
     }
 }
 
+@mixin mobile2{
+    @media screen and (min-width: 576px){
+        @content;
+    }
+}
+
 @mixin mobile-tablet-logo2{
-    @media  screen and (max-width: 735px){
+    @media  screen and (max-width: 800px){
         @content;
     }
 }
